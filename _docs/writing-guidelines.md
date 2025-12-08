@@ -9,7 +9,7 @@
 H2 content length:
 
 - Short H2s: 2-4 H3s (e.g., "Installing", "Getting started")
-- Medium H2s: 4-7 H3s (e.g., "Components", "Lifecycle")  
+- Medium H2s: 4-7 H3s (e.g., "Components", "Lifecycle")
 - Long H2s: 7+ H3s (use column layouts)
 
 H3 content length:
@@ -46,19 +46,19 @@ H3 content length:
 ## H3 writing guidelines
 
 - Place documentation links in the end. (see next for example)
-- Prefer to write explanations *after* a pre/table. Example:
+- Prefer to write explanations _after_ a pre/table. Example:
 
   ````markdown
   ### Setting default props
-  
+
   ```jsx
   Hello.defaultProps = {
-    color: 'blue'
-  }
+    color: "blue",
+  };
   ```
-  
+
   Default properties are used if no properties are given.
-  
+
   See: [defaultProps](https://reactjs.org/docs/react-component.html#defaultprops)
   ````
 
@@ -66,9 +66,9 @@ H3 content length:
 
   ````markdown
   ### via Data Attributes
-  
+
   #### index.html.erb
-  
+
   ```html
   <a
     href="#"
@@ -78,9 +78,9 @@ H3 content length:
     >Increment <%= @count.to_i %></a
   >
   ```
-  
+
   #### counter_reflex.rb
-  
+
   ```ruby
   class CounterReflex < StimulusReflex::Reflex
     def increment
@@ -88,29 +88,28 @@ H3 content length:
     end
   end
   ```
-  
+
   Trigger reflexes without writing any javascript with the `data-reflex` attribute.
-  
   ````
 
 - When showing reference information, use tables for quick scanning. Example:
 
-  ````markdown
+  ```markdown
   ### Primitives
 
-  | Sample                  | Type            |
-  | ---                     | ---             |
-  | `nil`                   | Nil/null        |
-  | `true` _/_ `false`      | Boolean         |
-  | ---                     | ---             |
-  | `23`                    | Integer         |
-  | `3.14`                  | Float           |
-  | ---                     | ---             |
-  | `"hello"`               | Binary string   |
-  | `:hello`                | Atom            |
+  | Sample             | Type          |
+  | ------------------ | ------------- |
+  | `nil`              | Nil/null      |
+  | `true` _/_ `false` | Boolean       |
+  | ---                | ---           |
+  | `23`               | Integer       |
+  | `3.14`             | Float         |
+  | ---                | ---           |
+  | `"hello"`          | Binary string |
+  | `:hello`           | Atom          |
 
   These are the basic data types in Elixir.
-  ````
+  ```
 
 - Use inline comments to explain results, equivalents, or provide context. Example:
 
@@ -142,5 +141,7 @@ H3 content length:
   Float.parse("34.1")      # → {34.1, ""}
   ```
   ````
+
+```
 
 ```
