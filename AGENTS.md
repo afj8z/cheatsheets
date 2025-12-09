@@ -22,4 +22,4 @@
 
 ## Markdown files
 
-Consult @_docs/writing-guidelines.md for formatting *.md files.
+Consult @\_docs/writing-guidelines.md for formatting \*.md files.
